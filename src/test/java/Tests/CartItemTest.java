@@ -1,8 +1,7 @@
 package Tests;
 
-import Pages.InitialClass;
+import PageObject.InitialClass;
 import org.junit.Test;
-import org.openqa.selenium.Dimension;
 
 public class CartItemTest extends InitialClass {
 

@@ -1,6 +1,6 @@
 package Tests;
 
-import Pages.InitialClass;
+import PageObject.InitialClass;
 import org.junit.Test;
 
 public class ListingTest extends InitialClass {

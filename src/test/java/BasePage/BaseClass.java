@@ -1,4 +1,4 @@
-package core;
+package BasePage;
 
 import io.appium.java_client.ios.IOSDriver;
 import org.junit.After;

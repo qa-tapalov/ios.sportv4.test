@@ -1,9 +1,7 @@
 package Tests;
 
-import Pages.InitialClass;
-import com.google.common.collect.ImmutableMap;
+import PageObject.InitialClass;
 import org.junit.Test;
-import org.openqa.selenium.Keys;
 
 public class SearchTest extends InitialClass {
 

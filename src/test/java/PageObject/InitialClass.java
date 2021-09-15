@@ -1,6 +1,6 @@
-package Pages;
+package PageObject;
 
-import core.BaseClass;
+import BasePage.BaseClass;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
@@ -14,11 +14,8 @@ import static io.appium.java_client.touch.offset.PointOption.point;
 import static java.time.Duration.ofMillis;
 import static java.time.Duration.ofSeconds;
 
-import java.lang.reflect.Parameter;
 import java.util.HashMap;
 import java.util.List;
-
-import static io.appium.java_client.touch.WaitOptions.waitOptions;
 
 public class InitialClass extends BaseClass {
 
