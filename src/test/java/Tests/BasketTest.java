@@ -10,6 +10,8 @@ public class BasketTest extends InitialClass {
         clickOnElement(bPage.getBasket());
         checkElementOnPage(bPage.getTitleBasket());
         checkElementOnPage(bPage.getChooseCity());
+        checkElementOnPage(bPage.getImageEmptyBasket());
+        checkElementOnPage(bPage.getTitleEmptyBasket());
         checkElementOnPage(bPage.getBtn());
     }
 

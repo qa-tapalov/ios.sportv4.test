@@ -160,5 +160,19 @@ public class InitialClass extends BaseClass {
         return driver.findElements(MobileBy.iOSNsPredicateString(predicateString));
     }
 
+    //Assert element
+    public void assertElementByText(By element, String keys){
+        MobileElement compare = (MobileElement) wait.until(ExpectedConditions.presenceOfElementLocated(element));
+        if (compare.getText().equals(keys)){
+            System.out.println("Надпись соответствует: " + compare.getText());
+        }
+        else {
+            System.out.println("Надпись не соответствует: " + compare.getText());
+
+        }
+
+    }
+
+
 
 }
