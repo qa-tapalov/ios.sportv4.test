@@ -9,6 +9,7 @@ public class SearchTest extends InitialClass {
     public void checkElementOnSearch() throws InterruptedException {
         clickOnElement(cPage.getCatalog());
         clickOnElement(cPage.getSearchBar());
+        sendKeys(cPage.getSearchBar(),"кроссовки");
         checkElementOnPage(sBar.getClose());
         checkElementOnPage(sBar.getTaps());
         checkElementOnPage(sBar.getTap1());

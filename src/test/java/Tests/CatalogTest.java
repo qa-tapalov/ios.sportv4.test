@@ -38,9 +38,9 @@ public class CatalogTest extends InitialClass {
         clickOnElement(cPage.getSearchBar());
         sendKeys(cPage.getSearchBar(),"кроссовки");
         Thread.sleep(1000);
-        tapByCoordinates(150,320);
+        clickOnElement(sBar.getCartItemFromSearch1());
         Thread.sleep(1000);
-        tapByCoordinates(30,40);
+        clickOnElement(cPage.getBackBtn());
         clickOnElement(sBar.getClose());
         Thread.sleep(1000);
         verticalSwipeByPercentages(0.8,0.01,0.5);

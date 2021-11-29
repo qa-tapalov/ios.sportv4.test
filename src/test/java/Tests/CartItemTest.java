@@ -29,12 +29,6 @@ public class CartItemTest extends InitialClass {
         verticalSwipeByPercentages(0.8,0.4,0.5);
         checkElementOnPage(cartPage.getDescription());
         checkElementOnPage(cartPage.getSpecifications());
-        verticalSwipeByPercentages(0.8,0.2,0.5);
-        checkElementOnPage(cartPage.getAddBasketFloat());
-        checkElementOnPage(cartPage.getBtnAddBasketFloat());
-        checkElementOnPage(cartPage.getPriceAddBasketFloat());
-        checkElementOnPage(cartPage.getReviewBox());
-        checkElementOnPage(cartPage.getQuestionsBox());
 
     }
 

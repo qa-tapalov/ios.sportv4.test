@@ -8,6 +8,7 @@ public class AuthorizationTest extends InitialClass {
 
     @Test
     public void checkAuthPage(){
+//        clickOnElement(onboardPage.getCloseBtn());
         clickOnElement(authPage.getProfile());
         clickOnElement(authPage.getAuth());
         checkElementOnPage(authPage.getClose());
@@ -22,7 +23,15 @@ public class AuthorizationTest extends InitialClass {
 
     }
 
-
+    @Test
+    public void authWithPhone(){
+        clickOnElement(authPage.getProfile());
+        clickOnElement(authPage.getAuth());
+        sendKeys(authPage.getPhoneBar(),"79071239901");
+        clickOnElement(authPage.getBtnSendCode());
+        sendKeys(authPage.getSendCodeBar(),"1234");
+        checkElementOnPage(authPage.getNameProfile());
+    }
 
 
 }

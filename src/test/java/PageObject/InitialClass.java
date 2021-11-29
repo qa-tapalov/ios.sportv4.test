@@ -22,17 +22,17 @@ public class InitialClass extends BaseClass {
    public CatalogPage cPage = new CatalogPage();
     public SearchBar sBar = new SearchBar();
     public AuthorizationPage authPage = new AuthorizationPage();
-    public BasketPage bPage = new BasketPage();
+    public BasketPage basketPage = new BasketPage();
     public ListingPage lPage = new ListingPage();
     public CartItemPage cartPage = new CartItemPage();
-
+    public OnboardPage onboardPage = new OnboardPage();
     public void clickOnElement(By element){
 
         wait.until(ExpectedConditions.presenceOfElementLocated(element));
 
         driver.findElement(element).click();
 
-        System.out.println("Click on element" + element);
+        System.out.println("Click on element: " + element);
     }
 
     //checking for the presence of an elementa
@@ -55,6 +55,51 @@ public class InitialClass extends BaseClass {
 //        BaseClass.wait.until(ExpectedConditions.presenceOfElementLocated(keys));
 //        BaseClass.driver.findElement(keys);
 //    }
+
+    public void openListing(String keys) throws InterruptedException {
+        clickOnElement(cPage.getCatalog());
+        clickOnElement(cPage.getSearchBar());
+        driver.findElement(cPage.getSearchBar()).sendKeys(keys);
+        Thread.sleep(1500);
+        clickOnElement(sBar.getSearchBtn());
+
+
+    }
+
+    public void addItemOnBasket(String id, int x) throws InterruptedException {
+        openListing(id);
+        //1 означает, что для данного товара присутствует выбор размера
+        //2 означает что для данного товара нет выбора размера
+        //3 добавляет в корзину с КТ
+        if (x == 1) {
+            clickOnElement(lPage.getBasketBtn());
+            chooseAvailableSize();
+            clickOnElement(lPage.getAddBasketBtn());
+            tapByCoordinates(100, 250);
+            clickOnElement(basketPage.getBasket());
+
+        }
+    }
+
+    public void chooseAvailableSize(){
+        final By[] size = {
+                lPage.getSizeElement1(),
+                lPage.getSizeElement2(),
+                lPage.getSizeElement3(),
+                lPage.getSizeElement4(),
+                lPage.getSizeElement5(),
+        };
+
+        for (By by : size) {
+            wait.until(ExpectedConditions.presenceOfElementLocated(by));
+            clickOnElement(by);
+            if (driver.findElement(by).isEnabled()) {
+
+                break;
+            }
+        }
+
+    }
 
 
     public void sendKeys(By element, String keys){
@@ -126,13 +171,7 @@ public class InitialClass extends BaseClass {
     }
 
 
-    public void openListing(String keys) throws InterruptedException {
-        clickOnElement(cPage.getCatalog());
-        clickOnElement(cPage.getSearchBar());
-        sendKeys(cPage.getSearchBar(), keys);
-        clickOnElement(sBar.getSearchBtn());
 
-    }
 
     public void scrollToMobileElement(String elementName, String direction) {
 

@@ -19,16 +19,16 @@ public class BaseClass {
     public void setUp() throws MalformedURLException {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("platformName", "iOS");
-        capabilities.setCapability("platformVersion", "14.6");
+        capabilities.setCapability("platformVersion", "14.8");
         capabilities.setCapability("deviceName", "iPhone 8 plus");
-        capabilities.setCapability("udid", "53d42f0a2309f3cb8a9bd8f67541e41361ed9a2d");
+        capabilities.setCapability("udid", "0620518dec780882c15469155fdf2899d984dd07");
         capabilities.setCapability("automationName", "XCUITest");
 //        capabilities.setCapability("app","/Users/testerkingbird/Downloads/cm4.ipa");
-        capabilities.setCapability("bundleId","ru.sportmaster.app.v4");
-        capabilities.setCapability("noReset","true");
+       capabilities.setCapability("bundleId","ru.sportmaster.app");
+        capabilities.setCapability("noReset","false");
         driver = new IOSDriver<>(new URL("http://localhost:4723/wd/hub"), capabilities);
 
-        wait = new WebDriverWait(driver,10);
+        wait = new WebDriverWait(driver,15);
 
         System.out.println("Приложение запущено");
         System.out.println();

@@ -22,14 +22,14 @@ public class ListingTest extends InitialClass {
         checkElementOnPage(lPage.getCompareItem());
         checkElementOnPage(lPage.getFavoriteItem());
         checkElementOnPage(lPage.getReviewItem());
-        checkElementOnPage(lPage.getIconBasket());
+        checkElementOnPage(lPage.getBasketBtn());
 
     }
 
     @Test
     public void checkElementOnWindowChooseSize() throws InterruptedException {
         openListing("10672588");
-        clickOnElement(lPage.getIconBasket());
+        clickOnElement(lPage.getBasketBtn());
         checkElementOnPage(lPage.getBottomSheetChooseSize());
         checkElementOnPage(lPage.getSizeChooser());
         checkElementOnPage(lPage.getSizeGroup());
@@ -38,9 +38,9 @@ public class ListingTest extends InitialClass {
     @Test
     public void addBasketFromListing() throws InterruptedException {
         openListing("10672588");
-        clickOnElement(lPage.getIconBasket());
-        clickOnElement(lPage.getChooseSizeFirst());
-        clickOnElement(lPage.getAddBasketFromListing());
+        clickOnElement(lPage.getBasketBtn());
+        chooseAvailableSize();
+        clickOnElement(lPage.getAddBasketBtn());
     }
 
 
