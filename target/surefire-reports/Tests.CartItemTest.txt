@@ -1,0 +1,74 @@
+-------------------------------------------------------------------------------
+Test set: Tests.CartItemTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 266.389 s <<< FAILURE! - in Tests.CartItemTest
+checkElementOnCartItem(Tests.CartItemTest)  Time elapsed: 52.859 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //XCUIElementTypeApplication[@name="Sportmaster"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther[1] (tried for 15 second(s) with 500 milliseconds interval)
+	at Tests.CartItemTest.checkElementOnCartItem(CartItemTest.java:13)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Air-Tester.local', ip: 'fe80:0:0:0:d4:82c4:da20:3c38%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.1'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/testerkingbird/Downl..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 8 plus, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 14.8, takesScreenshot: true, udid: 0620518dec780882c15469155fd..., webStorageEnabled: false}
+Session ID: c1475a3d-247a-493b-add6-ad3c06780a68
+*** Element info: {Using=xpath, value=//XCUIElementTypeApplication[@name="Sportmaster"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]}
+	at Tests.CartItemTest.checkElementOnCartItem(CartItemTest.java:13)
+
+checkSnackChooseSize(Tests.CartItemTest)  Time elapsed: 52.844 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //XCUIElementTypeApplication[@name="Sportmaster"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther[1] (tried for 15 second(s) with 500 milliseconds interval)
+	at Tests.CartItemTest.checkSnackChooseSize(CartItemTest.java:94)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Air-Tester.local', ip: 'fe80:0:0:0:d4:82c4:da20:3c38%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.1'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/testerkingbird/Downl..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 8 plus, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 14.8, takesScreenshot: true, udid: 0620518dec780882c15469155fd..., webStorageEnabled: false}
+Session ID: 832202e7-6c59-4780-99a2-484a12d01768
+*** Element info: {Using=xpath, value=//XCUIElementTypeApplication[@name="Sportmaster"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]}
+	at Tests.CartItemTest.checkSnackChooseSize(CartItemTest.java:94)
+
+imageGallery(Tests.CartItemTest)  Time elapsed: 53.267 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //XCUIElementTypeApplication[@name="Sportmaster"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther[1] (tried for 15 second(s) with 500 milliseconds interval)
+	at Tests.CartItemTest.imageGallery(CartItemTest.java:40)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Air-Tester.local', ip: 'fe80:0:0:0:d4:82c4:da20:3c38%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.1'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/testerkingbird/Downl..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 8 plus, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 14.8, takesScreenshot: true, udid: 0620518dec780882c15469155fd..., webStorageEnabled: false}
+Session ID: 530291d0-b0a8-4cf0-bf83-fec2eccc37ee
+*** Element info: {Using=xpath, value=//XCUIElementTypeApplication[@name="Sportmaster"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]}
+	at Tests.CartItemTest.imageGallery(CartItemTest.java:40)
+
+checkItemWithRichContent(Tests.CartItemTest)  Time elapsed: 54.739 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //XCUIElementTypeApplication[@name="Sportmaster"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther[1] (tried for 15 second(s) with 500 milliseconds interval)
+	at Tests.CartItemTest.checkItemWithRichContent(CartItemTest.java:66)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Air-Tester.local', ip: 'fe80:0:0:0:d4:82c4:da20:3c38%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.1'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/testerkingbird/Downl..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 8 plus, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 14.8, takesScreenshot: true, udid: 0620518dec780882c15469155fd..., webStorageEnabled: false}
+Session ID: b7cb2bfb-24ca-48cf-b7fa-19271494ed63
+*** Element info: {Using=xpath, value=//XCUIElementTypeApplication[@name="Sportmaster"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]}
+	at Tests.CartItemTest.checkItemWithRichContent(CartItemTest.java:66)
+
+openTableSize(Tests.CartItemTest)  Time elapsed: 52.663 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //XCUIElementTypeApplication[@name="Sportmaster"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther[1] (tried for 15 second(s) with 500 milliseconds interval)
+	at Tests.CartItemTest.openTableSize(CartItemTest.java:78)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Air-Tester.local', ip: 'fe80:0:0:0:d4:82c4:da20:3c38%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.1'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/testerkingbird/Downl..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 8 plus, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 14.8, takesScreenshot: true, udid: 0620518dec780882c15469155fd..., webStorageEnabled: false}
+Session ID: a5583b5b-a5a0-4d49-a883-40ee5ebe6bd5
+*** Element info: {Using=xpath, value=//XCUIElementTypeApplication[@name="Sportmaster"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]}
+	at Tests.CartItemTest.openTableSize(CartItemTest.java:78)
+

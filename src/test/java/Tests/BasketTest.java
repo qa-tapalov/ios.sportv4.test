@@ -2,6 +2,7 @@ package Tests;
 
 import PageObject.InitialClass;
 import io.appium.java_client.MobileElement;
+import io.qameta.allure.*;
 import org.junit.Test;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
@@ -27,14 +28,32 @@ public class BasketTest extends InitialClass {
 
     //добавить кредит, тотал, баннер, промокод
     @Test
-//    @Epic("Корзина")
-//    @Feature("Первый экран корзины")
-//    @Link("https://testrail.app.local/testrail/index.php?/cases/view/727986")
-//    @Description("Верстка корзины с товарами")
+    @Epic("Корзина")
+    @Feature("Первый экран корзины")
+    @Link("https://testrail.app.local/testrail/index.php?/cases/view/727986")
+    @Description("Плавающая кнопка в корзину")
     public void itemsInBasket() throws InterruptedException {
 //        clickOnElement(onboardPage.getCloseBtn());
         addItemOnBasket("10542186",1);
-        checkElementOnPage(basketPage.getBtnMain());
+        checkElementOnPage(basketPage.getBlockFloat());
+        checkElementOnPage(basketPage.getBtnFloat());
+        checkElementOnPage(basketPage.getBlockFloatPrice());
+        checkElementOnPage(basketPage.getBtnFloat());
+    }
+
+    @Test
+    @Epic("Корзина")
+    @Feature("Первый экран корзины")
+    @Link("https://testrail.app.local/testrail/index.php?/cases/view/727986")
+    @Description("Блок кредита")
+    public void creditOnBasket() throws InterruptedException {
+        addItemOnBasket("10542186",1);
+        checkElementOnPage(basketPage.getCreditConteiner());
+        checkElementOnPage(basketPage.getCreditIcon());
+        checkElementOnPage(basketPage.getCreditTitle());
+        checkElementOnPage(basketPage.getCreditDesc());
+        checkElementOnPage(basketPage.getCreditLable());
+
 
     }
 
@@ -56,11 +75,11 @@ public class BasketTest extends InitialClass {
 
 
     @Test
-//    @Epic("Корзина")
-//    @Feature("Первый экран корзины")
-//    @Story("Изменение города")
-//    @Link("https://testrail.app.local/testrail/index.php?/cases/view/727987")
-//    @Description("Изменение города в корзине")
+    @Epic("Корзина")
+    @Feature("Первый экран корзины")
+    @Story("Изменение города")
+    @Link("https://testrail.app.local/testrail/index.php?/cases/view/727987")
+    @Description("Изменение города в корзине")
     public void changeCity(){
 //        clickOnElement(onboardPage.getCloseBtn());
         clickOnElement(basketPage.getBasket());
@@ -73,8 +92,21 @@ public class BasketTest extends InitialClass {
     }
 
     @Test
-    public void test() throws InterruptedException {
-        openListing("10542186");
+    @Epic("Корзина")
+    @Feature("Первый экран корзины")
+    @Story("Список товаров")
+    @Link("https://testrail.app.local/testrail/index.php?/cases/view/727991")
+    @Description("Отображение и кликабельность лейблов у товара")
+    public void checkLabelOnItem() throws InterruptedException {
+//        clickOnElement(onboardPage.getCloseBtn());
+        clickOnElement(onboardPage.getCloseBtn());
+        addItemOnBasket("10542186",1);
+        checkElementOnPage(basketPage.getLabelFinalPrice());
+        clickOnElement(basketPage.getLabelFinalPrice());
+        checkElementOnPage(basketPage.getBottomSheetLabel());
+        checkElementOnPage(basketPage.getBottomSheetLabelTitle());
+        checkElementOnPage(basketPage.getBottomSheetLabelDesc());
+
 
     }
 

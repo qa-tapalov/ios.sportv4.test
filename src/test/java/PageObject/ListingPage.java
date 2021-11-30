@@ -11,11 +11,11 @@ public class ListingPage extends BaseClass {
     private final By compare = MobileBy.xpath("//XCUIElementTypeButton[@name=\"compare\"]");
     private final By cardStyle = MobileBy.xpath("//XCUIElementTypeButton[@name=\"cardStyle\"]");
     private final By filters = MobileBy.xpath("//XCUIElementTypeButton[@name=\"filters\"]");
-    private final By imageItem = MobileBy.xpath("//XCUIElementTypeApplication[@name=\"Sportmaster\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]");
+    private final By imageItem = MobileBy.xpath("//XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]");
     private final By favoriteItem = MobileBy.xpath("(//XCUIElementTypeButton[@name=\"favoriteEmpty\"])[1]");
     private final By compareItem = MobileBy.xpath("(//XCUIElementTypeButton[@name=\"compareEmpty\"])[1]");
     private final By reviewItem = MobileBy.xpath("//XCUIElementTypeApplication[@name=\"Sportmaster\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther[2]");
-    private final By basketBtn = MobileBy.xpath("(//XCUIElementTypeButton[@name=\"cart\"]");
+    private final By basketBtn = MobileBy.xpath("//XCUIElementTypeButton[@name=\"cart\"]");
     private final By bottomSheetChooseSize = MobileBy.xpath("//XCUIElementTypeApplication[@name=\"Sportmaster\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]");
     private final By addBasketBtn = MobileBy.xpath("//XCUIElementTypeButton[@name=\"В корзину\"]");
     private final By sizeGroup = MobileBy.xpath("//XCUIElementTypeApplication[@name=\"Sportmaster\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther");

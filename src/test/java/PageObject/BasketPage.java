@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 
 public class BasketPage extends BaseClass {
 
-    private final By basket = MobileBy.xpath("//XCUIElementTypeApplication[@name=\"Sportmaster\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeTabBar/XCUIElementTypeOther/XCUIElementTypeButton[4]");
+    private final By basket = MobileBy.xpath("//XCUIElementTypeOther/XCUIElementTypeTabBar/XCUIElementTypeOther/XCUIElementTypeButton[4]");
     private final By titleBasket = MobileBy.xpath("//XCUIElementTypeStaticText[@name=\"Корзина\"]");
     private final By chooseCity = MobileBy.xpath("//XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeButton");
     private final By cityName = MobileBy.xpath("//XCUIElementTypeStaticText[@name=\"Москва\"]");
@@ -24,10 +24,10 @@ public class BasketPage extends BaseClass {
     private final By label1ItemOnBasket = MobileBy.xpath("//XCUIElementTypeStaticText[@name=\"Новая коллекция\"]");
     private final By label2ItemOnBasket = MobileBy.xpath("//XCUIElementTypeApplication[@name=\"Sportmaster\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther");
     private final By label3ItemOnBasket = MobileBy.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/androidx.appcompat.widget.LinearLayoutCompat/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/androidx.recyclerview.widget.RecyclerView/android.widget.ImageView[3]");
+    private final By labelFinalPrice = MobileBy.xpath("//XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther");
     private final By bottomSheetLabel = MobileBy.xpath("//XCUIElementTypeApplication[@name=\"Sportmaster\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]/XCUIElementTypeOther");
     private final By bottomSheetLabelTitle = MobileBy.xpath("//XCUIElementTypeStaticText[@name=\"Финальная цена\"]");
     private final By bottomSheetLabelDesc = MobileBy.xpath("//XCUIElementTypeStaticText[@name=\"Стоимость товара окончательная. Скидки и бонусы при оплате не применяются. Данный товар не участвует в акциях.\"]");
-    private final By bottomSheetLabelClose = MobileBy.id("ru.sportmaster.app.v4:id/close");
 
     private final By titleItemOnBasket = MobileBy.xpath("//XCUIElementTypeStaticText[@name=\"Кроссовки мужские GSD One\"]");
     private final By colorItemOnBasket = MobileBy.xpath("//XCUIElementTypeStaticText[@name=\"Цвет: Серый\"]");
@@ -36,14 +36,32 @@ public class BasketPage extends BaseClass {
     private final By oldPriceItemOnBasket = MobileBy.xpath("ru.sportmaster.app.v4:id/old_price_tv");
     private final By sumItemOnBasket = MobileBy.xpath("(//XCUIElementTypeStaticText[@name=\"1\"])[1]");
 
-    private final By btnMain = MobileBy.id("//XCUIElementTypeButton[@name=\"Перейти к оформлению\"]");
-    private final By btnFloat = MobileBy.id("//XCUIElementTypeButton[@name=\"К оформлению\"]");
-    private final By blockFloat = MobileBy.id("//XCUIElementTypeApplication[@name=\"Sportmaster\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]");
-    private final By blockFloatOldPrice = MobileBy.id("ru.sportmaster.app.v4:id/old_price_tv");
-    private final By blockFloatPrice = MobileBy.xpath("(//XCUIElementTypeStaticText[@name=\"1 199 ₽\"])[4]");
-    private final By authFromBasketBtn = MobileBy.id("ru.sportmaster.app.v4:id/auth_btn");
-    private final By nextWithOutAuth = MobileBy.id("ru.sportmaster.app.v4:id/next_tv");
+    private final By btnMain = MobileBy.xpath("//XCUIElementTypeButton[@name=\"Перейти к оформлению\"]");
+    private final By btnFloat = MobileBy.xpath("//XCUIElementTypeButton[@name=\"К оформлению\"]");
+    private final By blockFloat = MobileBy.xpath("//XCUIElementTypeApplication[@name=\"Sportmaster\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]");
+    private final By blockFloatOldPrice = MobileBy.xpath("");
+    private final By blockFloatPrice = MobileBy.xpath("//XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[3]/XCUIElementTypeOther[2]");
+    private final By authFromBasketBtn = MobileBy.xpath("//XCUIElementTypeButton[@name=\"Войти или зарегистрироваться\"]");
+    private final By nextWithOutAuth = MobileBy.xpath("//XCUIElementTypeButton[@name=\"Продолжить без регистрации\"]");
 
+    private final By creditConteiner = MobileBy.xpath("//XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[6]/XCUIElementTypeOther");
+    private final By creditIcon = MobileBy.xpath("//XCUIElementTypeImage[@name=\"credit\"]");
+    private final By creditTitle = MobileBy.xpath("//XCUIElementTypeStaticText[@name=\"Оформить кредит\"]");
+    private final By creditLable = MobileBy.xpath("//XCUIElementTypeStaticText[@name=\"Доступно\"]");
+    private final By creditDesc = MobileBy.xpath("//XCUIElementTypeStaticText[@name=\"От «Покупай со СберБанком»\"]");
+    private final By creditDetailsIcon = MobileBy.xpath("");
+
+    private final By motivationBanner= MobileBy.xpath("//XCUIElementTypeImage[@name=\"motivationBanner\"]");
+
+    private final By promoCode = MobileBy.xpath("//XCUIElementTypeStaticText[@name=\"Введите промокод\"]");
+
+    private final By totalItemCount = MobileBy.xpath("//XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[4]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[1]/XCUIElementTypeOther");
+    private final By totalBox = MobileBy.xpath("//XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeCollectionView/XCUIElementTypeCell[4]/XCUIElementTypeOther/XCUIElementTypeOther");
+
+    //экран сопсоб получения
+    private final By btnExpressDelivery = MobileBy.xpath("//XCUIElementTypeButton[@name=\"Экспресс-доставка\"]");
+    private final By btnPickupInSingleStore = MobileBy.xpath("//XCUIElementTypeButton[@name=\"Забрать все в одном магазине\"]");
+    private final By deliveryComment = MobileBy.xpath("//XCUIElementTypeStaticText[@name=\"В корзине присутствуют товары недоступные для экспресс-доставки\"]");
 
     public By getBasket() {
         return basket;
@@ -121,9 +139,6 @@ public class BasketPage extends BaseClass {
         return blockFloatPrice;
     }
 
-    public By getBottomSheetLabelClose() {
-        return bottomSheetLabelClose;
-    }
 
     public By getBottomSheetLabelDesc() {
         return bottomSheetLabelDesc;
@@ -172,4 +187,61 @@ public class BasketPage extends BaseClass {
     public By getTitleItemOnBasket() {
         return titleItemOnBasket;
     }
+
+    public By getBtnExpressDelivery() {
+        return btnExpressDelivery;
+    }
+
+    public By getBtnPickupInSingleStore() {
+        return btnPickupInSingleStore;
+    }
+
+    public By getCreditConteiner() {
+        return creditConteiner;
+    }
+
+    public By getCreditDesc() {
+        return creditDesc;
+    }
+
+    public By getCreditDetailsIcon() {
+        return creditDetailsIcon;
+    }
+
+    public By getCreditIcon() {
+        return creditIcon;
+    }
+
+    public By getCreditLable() {
+        return creditLable;
+    }
+
+    public By getCreditTitle() {
+        return creditTitle;
+    }
+
+    public By getDeliveryComment() {
+        return deliveryComment;
+    }
+
+    public By getLabelFinalPrice() {
+        return labelFinalPrice;
+    }
+
+    public By getMotivationBanner() {
+        return motivationBanner;
+    }
+
+    public By getPromoCode() {
+        return promoCode;
+    }
+
+    public By getTotalBox() {
+        return totalBox;
+    }
+
+    public By getTotalItemCount() {
+        return totalItemCount;
+    }
+
 }

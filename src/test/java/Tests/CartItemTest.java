@@ -36,6 +36,7 @@ public class CartItemTest extends InitialClass {
     //https://testrail.app.local/testrail/index.php?/cases/view/684813
     @Test
     public void imageGallery() throws InterruptedException {
+        clickOnElement(onboardPage.getCloseBtn());
         openListing("10642580");
         clickOnElement(lPage.getImageItem());
         clickOnElement(cartPage.getImageItem());
@@ -62,10 +63,11 @@ public class CartItemTest extends InitialClass {
     //https://testrail.app.local/testrail/index.php?/cases/view/687803
     @Test
     public void checkItemWithRichContent() throws InterruptedException {
+        clickOnElement(onboardPage.getCloseBtn());
         openListing("10558310");
         clickOnElement(lPage.getImageItem());
         checkElementOnPage(cartPage.getRichContent());
-        verticalSwipeByPercentages(0.8,0.4,0.5);
+        verticalSwipeByPercentages(0.8,0.3,0.5);
         clickOnElement(cartPage.getRichContent());
         checkElementOnPage(cartPage.getRichWebView());
 
@@ -74,6 +76,7 @@ public class CartItemTest extends InitialClass {
     //https://testrail.app.local/testrail/index.php?/cases/view/684821
     @Test
     public void openTableSize() throws InterruptedException {
+        clickOnElement(onboardPage.getCloseBtn());
         openListing("10671281");
         clickOnElement(lPage.getImageItem());
         Thread.sleep(2000);

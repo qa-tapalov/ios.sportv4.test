@@ -23,9 +23,10 @@ public class BaseClass {
         capabilities.setCapability("deviceName", "iPhone 8 plus");
         capabilities.setCapability("udid", "0620518dec780882c15469155fdf2899d984dd07");
         capabilities.setCapability("automationName", "XCUITest");
-//        capabilities.setCapability("app","/Users/testerkingbird/Downloads/cm4.ipa");
-       capabilities.setCapability("bundleId","ru.sportmaster.app");
-        capabilities.setCapability("noReset","false");
+        capabilities.setCapability("app","/Users/testerkingbird/Downloads/cm4.ipa");
+//       capabilities.setCapability("bundleId","ru.sportmaster.app");
+//        capabilities.setCapability("resetOnSessionStartOnly","true");
+        capabilities.setCapability("fullReset","true");
         driver = new IOSDriver<>(new URL("http://localhost:4723/wd/hub"), capabilities);
 
         wait = new WebDriverWait(driver,15);

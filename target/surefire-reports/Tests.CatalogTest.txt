@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: Tests.CatalogTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 132.99 s <<< FAILURE! - in Tests.CatalogTest
+checkResentlyWatched(Tests.CatalogTest)  Time elapsed: 54.814 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[10] (tried for 15 second(s) with 500 milliseconds interval)
+	at Tests.CatalogTest.checkResentlyWatched(CatalogTest.java:41)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Air-Tester.local', ip: 'fe80:0:0:0:d4:82c4:da20:3c38%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.1'
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {app: /Users/testerkingbird/Downl..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 8 plus, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 14.8, takesScreenshot: true, udid: 0620518dec780882c15469155fd..., webStorageEnabled: false}
+Session ID: 1edee8ee-d8de-45b5-a7f7-db8278af6a41
+*** Element info: {Using=xpath, value=//XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[10]}
+	at Tests.CatalogTest.checkResentlyWatched(CatalogTest.java:41)
+
