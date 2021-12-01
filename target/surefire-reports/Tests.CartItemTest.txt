@@ -1,74 +1,97 @@
 -------------------------------------------------------------------------------
 Test set: Tests.CartItemTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 266.389 s <<< FAILURE! - in Tests.CartItemTest
-checkElementOnCartItem(Tests.CartItemTest)  Time elapsed: 52.859 s  <<< ERROR!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //XCUIElementTypeApplication[@name="Sportmaster"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther[1] (tried for 15 second(s) with 500 milliseconds interval)
-	at Tests.CartItemTest.checkElementOnCartItem(CartItemTest.java:13)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Tests run: 6, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 866.858 s <<< FAILURE! - in Tests.CartItemTest
+checkDefaultPickup(Tests.CartItemTest)  Time elapsed: 370.272 s  <<< ERROR!
+org.openqa.selenium.NoSuchSessionException: 
+A session is either terminated or not started
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Air-Tester.local', ip: 'fe80:0:0:0:d4:82c4:da20:3c38%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.1'
+System info: host: 'MacBook-Air-Tester.local', ip: 'fe80:0:0:0:1857:b55f:c10d:9ac4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.1'
 Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities {app: /Users/testerkingbird/Downl..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 8 plus, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 14.8, takesScreenshot: true, udid: 0620518dec780882c15469155fd..., webStorageEnabled: false}
-Session ID: c1475a3d-247a-493b-add6-ad3c06780a68
-*** Element info: {Using=xpath, value=//XCUIElementTypeApplication[@name="Sportmaster"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]}
-	at Tests.CartItemTest.checkElementOnCartItem(CartItemTest.java:13)
+Capabilities {app: /Users/testerkingbird/Downl..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 8 plus, fullReset: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, platform: MAC, platformName: MAC, platformVersion: 14.8, takesScreenshot: true, udid: 0620518dec780882c15469155fd..., webStorageEnabled: false}
+Session ID: 8170356a-f31a-4547-a817-64de858fd8fb
 
-checkSnackChooseSize(Tests.CartItemTest)  Time elapsed: 52.844 s  <<< ERROR!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //XCUIElementTypeApplication[@name="Sportmaster"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther[1] (tried for 15 second(s) with 500 milliseconds interval)
-	at Tests.CartItemTest.checkSnackChooseSize(CartItemTest.java:94)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+checkItemWithRichContent(Tests.CartItemTest)  Time elapsed: 49.508 s  <<< ERROR!
+org.openqa.selenium.WebDriverException: 
+It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Air-Tester.local', ip: 'fe80:0:0:0:d4:82c4:da20:3c38%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.1'
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities {app: /Users/testerkingbird/Downl..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 8 plus, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 14.8, takesScreenshot: true, udid: 0620518dec780882c15469155fd..., webStorageEnabled: false}
-Session ID: 832202e7-6c59-4780-99a2-484a12d01768
-*** Element info: {Using=xpath, value=//XCUIElementTypeApplication[@name="Sportmaster"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]}
-	at Tests.CartItemTest.checkSnackChooseSize(CartItemTest.java:94)
+System info: host: 'MacBook-Air-Tester.local', ip: 'fe80:0:0:0:1857:b55f:c10d:9ac4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.1'
+Driver info: driver.version: IOSDriver
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: Unable to launch WebDriverAgent because of xcodebuild failure: xcodebuild failed with code 70
+xcodebuild error message:
 
-imageGallery(Tests.CartItemTest)  Time elapsed: 53.267 s  <<< ERROR!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //XCUIElementTypeApplication[@name="Sportmaster"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther[1] (tried for 15 second(s) with 500 milliseconds interval)
-	at Tests.CartItemTest.imageGallery(CartItemTest.java:40)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+2021-12-01 15:21:26.864 xcodebuild[7207:154769] Error writing xctestrun file: Error Domain=NSCocoaErrorDomain Code=4 "The folder “WebDriverAgentRunner_iphoneos14.5-arm64.xctestrun” doesn’t exist." UserInfo={NSFilePath=/Users/testerkingbird/Library/Developer/Xcode/DerivedData/WebDriverAgent-alwvnomvwrdtzoaxbbkniqrpcdpp/Build/Products/WebDriverAgentRunner_iphoneos14.5-arm64.xctestrun, NSUserStringVariant=Folder, NSUnderlyingError=0x7fe627535230 {Error Domain=NSPOSIXErrorDomain Code=2 "No such file or directory"}}
+** TEST BUILD FAILED **
+2021-12-01 15:21:26.870 xcodebuild[7207:154644] [MT] DVTAssertions: Warning in /Library/Caches/com.apple.xbs/Sources/IDEFrameworks/IDEFrameworks-18212/IDEFoundation/Testing/IDETestRunSpecificationBuilder.m:678
+Details:  Failed to compute path to baseline file during test run spec construction: <XCTHTestRunSpecification: 0x7fe627baf190>
+Object:   <IDETestRunSpecificationBuilder>
+Method:   +testRunSpecificationsForTestingSpecifiers:scheme:buildables:withBuildParameters:additionalEnvironmentVariables:additionalCommandLineArguments:testRerunPolicy:includeClangProfileParameters:shouldDebugAppExtensions:error:
+Thread:   <NSThread: 0x7fe6247150b0>{number = 1, name = main}
+Please file a bug at https://feedbackassistant.apple.com with this warning message and any useful information you can provide.
+xcodebuild: error: Failed to build project WebDriverAgent with scheme WebDriverAgentRunner.
+	Reason: Cannot test target “WebDriverAgentRunner” on “test100-SM-iPOD-KingBird”: test100-SM-iPOD-KingBird’s iOS 12.4.6 doesn’t match WebDriverAgentRunner’s iOS 14.8 deployment target.. Make sure you follow the tutorial at https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md. Try to remove the WebDriverAgentRunner application from the device if it is installed and reboot the device.
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Air-Tester.local', ip: 'fe80:0:0:0:d4:82c4:da20:3c38%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.1'
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities {app: /Users/testerkingbird/Downl..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 8 plus, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 14.8, takesScreenshot: true, udid: 0620518dec780882c15469155fd..., webStorageEnabled: false}
-Session ID: 530291d0-b0a8-4cf0-bf83-fec2eccc37ee
-*** Element info: {Using=xpath, value=//XCUIElementTypeApplication[@name="Sportmaster"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]}
-	at Tests.CartItemTest.imageGallery(CartItemTest.java:40)
+System info: host: 'MacBook-Air-Tester.local', ip: 'fe80:0:0:0:1857:b55f:c10d:9ac4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.1'
+Driver info: driver.version: IOSDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to launch WebDriverAgent because of xcodebuild failure: xcodebuild failed with code 70
+xcodebuild error message:
 
-checkItemWithRichContent(Tests.CartItemTest)  Time elapsed: 54.739 s  <<< ERROR!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //XCUIElementTypeApplication[@name="Sportmaster"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther[1] (tried for 15 second(s) with 500 milliseconds interval)
-	at Tests.CartItemTest.checkItemWithRichContent(CartItemTest.java:66)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Air-Tester.local', ip: 'fe80:0:0:0:d4:82c4:da20:3c38%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.1'
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities {app: /Users/testerkingbird/Downl..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 8 plus, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 14.8, takesScreenshot: true, udid: 0620518dec780882c15469155fd..., webStorageEnabled: false}
-Session ID: b7cb2bfb-24ca-48cf-b7fa-19271494ed63
-*** Element info: {Using=xpath, value=//XCUIElementTypeApplication[@name="Sportmaster"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]}
-	at Tests.CartItemTest.checkItemWithRichContent(CartItemTest.java:66)
+2021-12-01 15:21:26.864 xcodebuild[7207:154769] Error writing xctestrun file: Error Domain=NSCocoaErrorDomain Code=4 "The folder “WebDriverAgentRunner_iphoneos14.5-arm64.xctestrun” doesn’t exist." UserInfo={NSFilePath=/Users/testerkingbird/Library/Developer/Xcode/DerivedData/WebDriverAgent-alwvnomvwrdtzoaxbbkniqrpcdpp/Build/Products/WebDriverAgentRunner_iphoneos14.5-arm64.xctestrun, NSUserStringVariant=Folder, NSUnderlyingError=0x7fe627535230 {Error Domain=NSPOSIXErrorDomain Code=2 "No such file or directory"}}
+** TEST BUILD FAILED **
+2021-12-01 15:21:26.870 xcodebuild[7207:154644] [MT] DVTAssertions: Warning in /Library/Caches/com.apple.xbs/Sources/IDEFrameworks/IDEFrameworks-18212/IDEFoundation/Testing/IDETestRunSpecificationBuilder.m:678
+Details:  Failed to compute path to baseline file during test run spec construction: <XCTHTestRunSpecification: 0x7fe627baf190>
+Object:   <IDETestRunSpecificationBuilder>
+Method:   +testRunSpecificationsForTestingSpecifiers:scheme:buildables:withBuildParameters:additionalEnvironmentVariables:additionalCommandLineArguments:testRerunPolicy:includeClangProfileParameters:shouldDebugAppExtensions:error:
+Thread:   <NSThread: 0x7fe6247150b0>{number = 1, name = main}
+Please file a bug at https://feedbackassistant.apple.com with this warning message and any useful information you can provide.
+xcodebuild: error: Failed to build project WebDriverAgent with scheme WebDriverAgentRunner.
+	Reason: Cannot test target “WebDriverAgentRunner” on “test100-SM-iPOD-KingBird”: test100-SM-iPOD-KingBird’s iOS 12.4.6 doesn’t match WebDriverAgentRunner’s iOS 14.8 deployment target.. Make sure you follow the tutorial at https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md. Try to remove the WebDriverAgentRunner application from the device if it is installed and reboot the device.
+    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:380:37)
+    at runNextTicks (internal/process/task_queues.js:58:5)
+    at processImmediate (internal/timers.js:412:9)
 
-openTableSize(Tests.CartItemTest)  Time elapsed: 52.663 s  <<< ERROR!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //XCUIElementTypeApplication[@name="Sportmaster"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther[1] (tried for 15 second(s) with 500 milliseconds interval)
-	at Tests.CartItemTest.openTableSize(CartItemTest.java:78)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+openTableSize(Tests.CartItemTest)  Time elapsed: 38.846 s  <<< ERROR!
+org.openqa.selenium.WebDriverException: 
+It is impossible to create a new session because 'createSession' which takes HttpClient, InputStream and long was not found or it is not accessible
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Air-Tester.local', ip: 'fe80:0:0:0:d4:82c4:da20:3c38%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.1'
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities {app: /Users/testerkingbird/Downl..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 8 plus, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 14.8, takesScreenshot: true, udid: 0620518dec780882c15469155fd..., webStorageEnabled: false}
-Session ID: a5583b5b-a5a0-4d49-a883-40ee5ebe6bd5
-*** Element info: {Using=xpath, value=//XCUIElementTypeApplication[@name="Sportmaster"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeCollectionView/XCUIElementTypeCell[1]/XCUIElementTypeOther/XCUIElementTypeOther[1]}
-	at Tests.CartItemTest.openTableSize(CartItemTest.java:78)
+System info: host: 'MacBook-Air-Tester.local', ip: 'fe80:0:0:0:1857:b55f:c10d:9ac4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.1'
+Driver info: driver.version: IOSDriver
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: Unable to launch WebDriverAgent because of xcodebuild failure: xcodebuild failed with code 70
+xcodebuild error message:
+
+2021-12-01 15:22:06.018 xcodebuild[7290:155883] Error writing xctestrun file: Error Domain=NSCocoaErrorDomain Code=4 "The folder “WebDriverAgentRunner_iphoneos14.5-arm64.xctestrun” doesn’t exist." UserInfo={NSFilePath=/Users/testerkingbird/Library/Developer/Xcode/DerivedData/WebDriverAgent-alwvnomvwrdtzoaxbbkniqrpcdpp/Build/Products/WebDriverAgentRunner_iphoneos14.5-arm64.xctestrun, NSUserStringVariant=Folder, NSUnderlyingError=0x7fb31a1e4b10 {Error Domain=NSPOSIXErrorDomain Code=2 "No such file or directory"}}
+** TEST BUILD FAILED **
+2021-12-01 15:22:06.028 xcodebuild[7290:155809] [MT] DVTAssertions: Warning in /Library/Caches/com.apple.xbs/Sources/IDEFrameworks/IDEFrameworks-18212/IDEFoundation/Testing/IDETestRunSpecificationBuilder.m:678
+Details:  Failed to compute path to baseline file during test run spec construction: <XCTHTestRunSpecification: 0x7fb31a86a090>
+Object:   <IDETestRunSpecificationBuilder>
+Method:   +testRunSpecificationsForTestingSpecifiers:scheme:buildables:withBuildParameters:additionalEnvironmentVariables:additionalCommandLineArguments:testRerunPolicy:includeClangProfileParameters:shouldDebugAppExtensions:error:
+Thread:   <NSThread: 0x7fb3190136d0>{number = 1, name = main}
+Please file a bug at https://feedbackassistant.apple.com with this warning message and any useful information you can provide.
+xcodebuild: error: Failed to build project WebDriverAgent with scheme WebDriverAgentRunner.
+	Reason: Cannot test target “WebDriverAgentRunner” on “test100-SM-iPOD-KingBird”: test100-SM-iPOD-KingBird’s iOS 12.4.6 doesn’t match WebDriverAgentRunner’s iOS 14.8 deployment target.. Make sure you follow the tutorial at https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md. Try to remove the WebDriverAgentRunner application from the device if it is installed and reboot the device.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MacBook-Air-Tester.local', ip: 'fe80:0:0:0:1857:b55f:c10d:9ac4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.1'
+Driver info: driver.version: IOSDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to launch WebDriverAgent because of xcodebuild failure: xcodebuild failed with code 70
+xcodebuild error message:
+
+2021-12-01 15:22:06.018 xcodebuild[7290:155883] Error writing xctestrun file: Error Domain=NSCocoaErrorDomain Code=4 "The folder “WebDriverAgentRunner_iphoneos14.5-arm64.xctestrun” doesn’t exist." UserInfo={NSFilePath=/Users/testerkingbird/Library/Developer/Xcode/DerivedData/WebDriverAgent-alwvnomvwrdtzoaxbbkniqrpcdpp/Build/Products/WebDriverAgentRunner_iphoneos14.5-arm64.xctestrun, NSUserStringVariant=Folder, NSUnderlyingError=0x7fb31a1e4b10 {Error Domain=NSPOSIXErrorDomain Code=2 "No such file or directory"}}
+** TEST BUILD FAILED **
+2021-12-01 15:22:06.028 xcodebuild[7290:155809] [MT] DVTAssertions: Warning in /Library/Caches/com.apple.xbs/Sources/IDEFrameworks/IDEFrameworks-18212/IDEFoundation/Testing/IDETestRunSpecificationBuilder.m:678
+Details:  Failed to compute path to baseline file during test run spec construction: <XCTHTestRunSpecification: 0x7fb31a86a090>
+Object:   <IDETestRunSpecificationBuilder>
+Method:   +testRunSpecificationsForTestingSpecifiers:scheme:buildables:withBuildParameters:additionalEnvironmentVariables:additionalCommandLineArguments:testRerunPolicy:includeClangProfileParameters:shouldDebugAppExtensions:error:
+Thread:   <NSThread: 0x7fb3190136d0>{number = 1, name = main}
+Please file a bug at https://feedbackassistant.apple.com with this warning message and any useful information you can provide.
+xcodebuild: error: Failed to build project WebDriverAgent with scheme WebDriverAgentRunner.
+	Reason: Cannot test target “WebDriverAgentRunner” on “test100-SM-iPOD-KingBird”: test100-SM-iPOD-KingBird’s iOS 12.4.6 doesn’t match WebDriverAgentRunner’s iOS 14.8 deployment target.. Make sure you follow the tutorial at https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md. Try to remove the WebDriverAgentRunner application from the device if it is installed and reboot the device.
+    at getResponseForW3CError (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:380:37)
+    at runNextTicks (internal/process/task_queues.js:58:5)
+    at processImmediate (internal/timers.js:412:9)
 

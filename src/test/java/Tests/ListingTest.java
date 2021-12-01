@@ -1,12 +1,19 @@
 package Tests;
 
 import PageObject.InitialClass;
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Link;
 import org.junit.Test;
 
 public class ListingTest extends InitialClass {
 
+    @Epic("Плитка товаров")
+    @Link("https://testrail.app.local/testrail/index.php?/cases/view/671850")
+    @Description("Проверка наличия элементов в товарной плитке")
     @Test
     public void checkElementOnListing() throws InterruptedException {
+        clickOnElement(onboardPage.getCloseBtn());
         openListing("10672588");
         checkElementOnPage(lPage.getIconSort());
         checkElementOnPage(lPage.getSort());
@@ -15,8 +22,12 @@ public class ListingTest extends InitialClass {
         checkElementOnPage(lPage.getCardStyle());
     }
 
+    @Epic("Плитка товаров")
+    @Link("https://testrail.app.local/testrail/index.php?/cases/view/671854")
+    @Description("Проверка наличия элементов на карточке товара в товарной плитке")
     @Test
     public void checkElementOnItem() throws InterruptedException {
+        clickOnElement(onboardPage.getCloseBtn());
         openListing("10672588");
         checkElementOnPage(lPage.getImageItem());
         checkElementOnPage(lPage.getCompareItem());
@@ -26,8 +37,10 @@ public class ListingTest extends InitialClass {
 
     }
 
+
     @Test
     public void checkElementOnWindowChooseSize() throws InterruptedException {
+        clickOnElement(onboardPage.getCloseBtn());
         openListing("10672588");
         clickOnElement(lPage.getBasketBtn());
         checkElementOnPage(lPage.getBottomSheetChooseSize());
@@ -37,6 +50,7 @@ public class ListingTest extends InitialClass {
 
     @Test
     public void addBasketFromListing() throws InterruptedException {
+        clickOnElement(onboardPage.getCloseBtn());
         openListing("10672588");
         clickOnElement(lPage.getBasketBtn());
         chooseAvailableSize();

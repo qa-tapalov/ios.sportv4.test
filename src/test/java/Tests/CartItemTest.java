@@ -2,13 +2,21 @@ package Tests;
 
 import PageObject.InitialClass;
 import io.appium.java_client.MobileElement;
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Link;
 import org.junit.Test;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class CartItemTest extends InitialClass {
 
+    @Epic("Карточка товара")
+    @Link("https://testrail.app.local/testrail/index.php?/cases/view/684815")
+    @Description("Проверка элементов в карточке товара")
     @Test
     public void checkElementOnCartItem() throws InterruptedException {
+        clickOnElement(onboardPage.getCloseBtn());
         openListing("10671281");
         clickOnElement(lPage.getImageItem());
         checkElementOnPage(cartPage.getBackBtn());
@@ -19,7 +27,7 @@ public class CartItemTest extends InitialClass {
         checkElementOnPage(cartPage.getLabel());
         checkElementOnPage(cartPage.getIconReview());
         checkElementOnPage(cartPage.getIconBrand());
-        verticalSwipeByPercentages(0.8,0.4,0.5);
+        verticalSwipeByPercentages(0.8,0.2,0.5);
         checkElementOnPage(cartPage.getColors());
         checkElementOnPage(cartPage.getSizeGroups());
         checkElementOnPage(cartPage.getSize1());
@@ -32,8 +40,11 @@ public class CartItemTest extends InitialClass {
 
     }
 
-    //взаимодействие с картинкой товара
-    //https://testrail.app.local/testrail/index.php?/cases/view/684813
+
+    @Epic("Карточка товара")
+    @Feature("Фото товара")
+    @Link("https://testrail.app.local/testrail/index.php?/cases/view/684813")
+    @Description("Взаимодействие с картинкой товара")
     @Test
     public void imageGallery() throws InterruptedException {
         clickOnElement(onboardPage.getCloseBtn());
@@ -46,8 +57,11 @@ public class CartItemTest extends InitialClass {
     }
 
 
-    //воспроизведение видео
-    //https://testrail.app.local/testrail/index.php?/cases/view/684816
+
+//    @Epic("Карточка товара")
+//    @Feature("Видео товара")
+//    @Link("https://testrail.app.local/testrail/index.php?/cases/view/684816")
+//    @Description("Наличие кнопки воспроизведения видео и воспроизведение видео")
 //    @Test
 //    public void videoOnItem() throws InterruptedException {
 //        openListing("10656190");
@@ -59,8 +73,11 @@ public class CartItemTest extends InitialClass {
 //    }
 
 
-    //отображение рич контента
-    //https://testrail.app.local/testrail/index.php?/cases/view/687803
+
+    @Epic("Карточка товара")
+    @Feature("Товар с рич контентом")
+    @Link("https://testrail.app.local/testrail/index.php?/cases/view/687803")
+    @Description("Отображение рич контента и его кликабельность")
     @Test
     public void checkItemWithRichContent() throws InterruptedException {
         clickOnElement(onboardPage.getCloseBtn());
@@ -72,8 +89,11 @@ public class CartItemTest extends InitialClass {
         checkElementOnPage(cartPage.getRichWebView());
 
     }
-    //открытие таблицы размеров
-    //https://testrail.app.local/testrail/index.php?/cases/view/684821
+
+    @Epic("Карточка товара")
+    @Feature("Таблица размеров")
+    @Link("https://testrail.app.local/testrail/index.php?/cases/view/684821")
+    @Description("Проверка наличия ссылки на таблицу размеров и её открытие")
     @Test
     public void openTableSize() throws InterruptedException {
         clickOnElement(onboardPage.getCloseBtn());
@@ -88,16 +108,33 @@ public class CartItemTest extends InitialClass {
     }
 
 
+    @Test
+    @Epic("Карточка товара")
+    @Feature("Блок доступности")
+    @Link("https://testrail.app.local/testrail/index.php?/cases/view/684825")
+    @Description("Проверка появления блока доступности товара в магазине")
+    public void checkDefaultPickup() throws InterruptedException {
+        clickOnElement(onboardPage.getCloseBtn());
+        openListing("10642580");
+        clickOnElement(lPage.getImageItem());
+        verticalSwipeByPercentages(0.8,0.3,0.5);
+        checkElementOnPage(cartPage.getDefaultPickup());
+        clickOnElement(cartPage.getSizeItem1());
+        checkElementOnPage(cartPage.getPickup());
 
-    //нельзя добавить товар в корзину без выбора размера
-    //
+    }
+
+    @Epic("Карточка товара")
+    @Feature("Добавление в корзину с КТ")
+    @Link("https://testrail.app.local/testrail/index.php?/cases/view/684819")
+    @Description("Проверка появления алерта, при добавлении в корзину, если не выбрать размер")
     @Test
     public void checkSnackChooseSize() throws InterruptedException {
+        clickOnElement(onboardPage.getCloseBtn());
         openListing("10671281");
         clickOnElement(lPage.getImageItem());
         scrollToMobileElement("Вопросы о товаре", "down");
         clickOnElement(cartPage.getBtnAddBasketFloat());
-        assertElementByText(cartPage.getSnackChooseSize(),"Выберите размер");
 
 
     }

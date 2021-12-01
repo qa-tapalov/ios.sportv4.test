@@ -1,14 +1,19 @@
 package Tests;
 
 import PageObject.InitialClass;
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Link;
 import org.junit.Test;
 
 public class AuthorizationTest extends InitialClass {
 
-
+    @Epic("Авторизация")
+    @Link("")
+    @Description("Проверка наличия элементов на экране авторизации")
     @Test
     public void checkAuthPage(){
-//        clickOnElement(onboardPage.getCloseBtn());
+        clickOnElement(onboardPage.getCloseBtn());
         clickOnElement(authPage.getProfile());
         clickOnElement(authPage.getAuth());
         checkElementOnPage(authPage.getClose());
@@ -23,8 +28,13 @@ public class AuthorizationTest extends InitialClass {
 
     }
 
+    @Epic("Авторизация")
+    @Link("")
+    @Description("Аворизация по номеру телефона")
     @Test
     public void authWithPhone(){
+        clickOnElement(onboardPage.getCloseBtn());
+
         clickOnElement(authPage.getProfile());
         clickOnElement(authPage.getAuth());
         sendKeys(authPage.getPhoneBar(),"79071239901");

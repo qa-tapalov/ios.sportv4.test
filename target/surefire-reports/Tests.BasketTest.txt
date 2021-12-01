@@ -1,32 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: Tests.BasketTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 354.846 s <<< FAILURE! - in Tests.BasketTest
-changeCity(Tests.BasketTest)  Time elapsed: 27.227 s  <<< ERROR!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //XCUIElementTypeStaticText[@name="Москва"] (tried for 15 second(s) with 500 milliseconds interval)
-	at Tests.BasketTest.changeCity(BasketTest.java:86)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Air-Tester.local', ip: 'fe80:0:0:0:d4:82c4:da20:3c38%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.1'
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities {app: /Users/testerkingbird/Downl..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 8 plus, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 14.8, takesScreenshot: true, udid: 0620518dec780882c15469155fd..., webStorageEnabled: false}
-Session ID: fe63f3a9-6f01-4b82-9560-d1e1cc56c9b3
-*** Element info: {Using=xpath, value=//XCUIElementTypeStaticText[@name="Москва"]}
-	at Tests.BasketTest.changeCity(BasketTest.java:86)
-
-checkLabelOnItem(Tests.BasketTest)  Time elapsed: 24.022 s  <<< ERROR!
+Tests run: 6, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 431.202 s <<< FAILURE! - in Tests.BasketTest
+checkLabelOnItem(Tests.BasketTest)  Time elapsed: 47.578 s  <<< ERROR!
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //XCUIElementTypeButton[@name="СloseWhite"] (tried for 15 second(s) with 500 milliseconds interval)
-	at Tests.BasketTest.checkLabelOnItem(BasketTest.java:102)
+	at Tests.BasketTest.checkLabelOnItem(BasketTest.java:103)
 Caused by: org.openqa.selenium.NoSuchElementException: 
 An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Air-Tester.local', ip: 'fe80:0:0:0:d4:82c4:da20:3c38%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.1'
+System info: host: 'MacBook-Air-Tester.local', ip: 'fe80:0:0:0:1857:b55f:c10d:9ac4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.1'
 Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities {app: /Users/testerkingbird/Downl..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 8 plus, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 14.8, takesScreenshot: true, udid: 0620518dec780882c15469155fd..., webStorageEnabled: false}
-Session ID: b33f1ff1-612c-4d78-8f6c-0c77e368bfad
+Capabilities {app: /Users/testerkingbird/Downl..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 8 plus, fullReset: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, platform: MAC, platformName: MAC, platformVersion: 14.8, takesScreenshot: true, udid: 0620518dec780882c15469155fd..., webStorageEnabled: false}
+Session ID: 7fb8158f-fb20-47f6-afa5-57da1d400848
 *** Element info: {Using=xpath, value=//XCUIElementTypeButton[@name="СloseWhite"]}
-	at Tests.BasketTest.checkLabelOnItem(BasketTest.java:102)
+	at Tests.BasketTest.checkLabelOnItem(BasketTest.java:103)
 
