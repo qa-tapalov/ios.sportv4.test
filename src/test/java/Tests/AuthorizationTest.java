@@ -34,7 +34,6 @@ public class AuthorizationTest extends InitialClass {
     @Test
     public void authWithPhone(){
         clickOnElement(onboardPage.getCloseBtn());
-
         clickOnElement(authPage.getProfile());
         clickOnElement(authPage.getAuth());
         sendKeys(authPage.getPhoneBar(),"79071239901");

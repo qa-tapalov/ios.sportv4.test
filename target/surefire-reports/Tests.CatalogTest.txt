@@ -1,18 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: Tests.CatalogTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 212.156 s <<< FAILURE! - in Tests.CatalogTest
-checkResentlyWatched(Tests.CatalogTest)  Time elapsed: 83.84 s  <<< ERROR!
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 209.033 s <<< FAILURE! - in Tests.CatalogTest
+checkResentlyWatched(Tests.CatalogTest)  Time elapsed: 83.253 s  <<< ERROR!
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.AccessibilityId: back (tried for 15 second(s) with 500 milliseconds interval)
 	at Tests.CatalogTest.checkResentlyWatched(CatalogTest.java:62)
 Caused by: org.openqa.selenium.NoSuchElementException: 
 An element could not be located on the page using the given search parameters.
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MacBook-Air-Tester.local', ip: 'fe80:0:0:0:1857:b55f:c10d:9ac4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.1'
+System info: host: 'Air-Tester.Dlink', ip: 'fe80:0:0:0:1857:b55f:c10d:9ac4%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5.2', java.version: '17.0.1'
 Driver info: io.appium.java_client.ios.IOSDriver
 Capabilities {app: /Users/testerkingbird/Downl..., automationName: XCUITest, browserName: , databaseEnabled: false, deviceName: iPhone 8 plus, fullReset: true, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, platform: MAC, platformName: MAC, platformVersion: 14.8, takesScreenshot: true, udid: 0620518dec780882c15469155fd..., webStorageEnabled: false}
-Session ID: 73f48a11-6f8e-48e0-be06-ceef2522f5f9
+Session ID: 0af78224-dd46-4452-b341-a0efb5029cb3
 *** Element info: {Using=accessibility id, value=back}
 	at Tests.CatalogTest.checkResentlyWatched(CatalogTest.java:62)
 

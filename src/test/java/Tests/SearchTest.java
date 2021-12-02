@@ -11,6 +11,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class SearchTest extends InitialClass {
 
+    @Epic("Каталог")
+    @Feature("Поиск")
+    @Link("https://testrail.app.local/testrail/index.php?/cases/view/678832")
+    @Description("Проверка элементов в поиске")
     @Test
     public void checkElementOnSearch() throws InterruptedException {
         clickOnElement(onboardPage.getCloseBtn());

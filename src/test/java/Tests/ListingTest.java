@@ -37,7 +37,9 @@ public class ListingTest extends InitialClass {
 
     }
 
-
+    @Epic("Плитка товаров")
+    @Link("https://testrail.app.local/testrail/index.php?/cases/view/671854")
+    @Description("Проверка наличия элементов в блоке добавления товара в корзину")
     @Test
     public void checkElementOnWindowChooseSize() throws InterruptedException {
         clickOnElement(onboardPage.getCloseBtn());
@@ -48,6 +50,9 @@ public class ListingTest extends InitialClass {
         checkElementOnPage(lPage.getSizeGroup());
     }
 
+    @Epic("Плитка товаров")
+    @Link("https://testrail.app.local/testrail/index.php?/cases/view/671854")
+    @Description("Добавление в корзину с листинга")
     @Test
     public void addBasketFromListing() throws InterruptedException {
         clickOnElement(onboardPage.getCloseBtn());

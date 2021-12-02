@@ -40,6 +40,19 @@ public class CartItemTest extends InitialClass {
 
     }
 
+    @Epic("Карточка товара")
+    @Link("https://testrail.app.local/testrail/index.php?/cases/view/684815")
+    @Description("Проверка отображение блока отзывы")
+    @Test
+    public void checkBoxReview() throws InterruptedException {
+        clickOnElement(onboardPage.getCloseBtn());
+        openListing("10671281");
+        clickOnElement(lPage.getImageItem());
+        scrollToMobileElement("Отзывы покупателей", "down");
+        checkElementOnPage(cartPage.getReviewBox());
+
+    }
+
 
     @Epic("Карточка товара")
     @Feature("Фото товара")

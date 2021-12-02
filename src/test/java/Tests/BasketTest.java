@@ -100,7 +100,6 @@ public class BasketTest extends InitialClass {
     @Description("Отображение и кликабельность лейблов у товара")
     public void checkLabelOnItem() throws InterruptedException {
         clickOnElement(onboardPage.getCloseBtn());
-        clickOnElement(onboardPage.getCloseBtn());
         addItemOnBasket("10542186",1);
         checkElementOnPage(basketPage.getLabelFinalPrice());
         clickOnElement(basketPage.getLabelFinalPrice());

@@ -27,6 +27,8 @@ public class InitialClass extends BaseClass {
     public ListingPage lPage = new ListingPage();
     public CartItemPage cartPage = new CartItemPage();
     public OnboardPage onboardPage = new OnboardPage();
+
+    @Step
     public void clickOnElement(By element){
 
         wait.until(ExpectedConditions.presenceOfElementLocated(element));
@@ -37,6 +39,7 @@ public class InitialClass extends BaseClass {
     }
 
     //checking for the presence of an elementa
+    @Step
     public void checkElementOnPage(By element){
         try{
             BaseClass.wait.until(ExpectedConditions.presenceOfElementLocated(element));
@@ -56,7 +59,7 @@ public class InitialClass extends BaseClass {
 //        BaseClass.wait.until(ExpectedConditions.presenceOfElementLocated(keys));
 //        BaseClass.driver.findElement(keys);
 //    }
-
+@Step
     public void openListing(String keys) throws InterruptedException {
         clickOnElement(cPage.getCatalog());
         clickOnElement(cPage.getSearchBar());
@@ -67,6 +70,7 @@ public class InitialClass extends BaseClass {
 
     }
 
+    @Step
     public void addItemOnBasket(String id, int x) throws InterruptedException {
         openListing(id);
         //1 означает, что для данного товара присутствует выбор размера
@@ -93,6 +97,7 @@ public class InitialClass extends BaseClass {
         }
     }
 
+    @Step
     public void chooseAvailableSize(){
         final By[] size = {
                 lPage.getSizeElement1(),
@@ -135,14 +140,14 @@ public class InitialClass extends BaseClass {
 
     }
 
-
+    @Step
     public void sendKeys(By element, String keys){
         wait.until(ExpectedConditions.presenceOfElementLocated(element));
         driver.findElement(element).sendKeys(keys);
 
     }
 
-
+    @Step
     public void tapByCoordinates (int x,  int y) {
         TouchAction action = new TouchAction(driver);
 
@@ -152,6 +157,7 @@ public class InitialClass extends BaseClass {
     }
 
     //Horizontal Swipe by percentages
+    @Step
     public void horizontalSwipeByPercentage (double startPercentage, double endPercentage, double anchorPercentage) {
         Dimension size = driver.manage().window().getSize();
         int anchor = (int) (size.height * anchorPercentage);
@@ -165,7 +171,9 @@ public class InitialClass extends BaseClass {
                 .moveTo(point(endPoint, anchor))
                 .release().perform();
     }
+
     //Vertical Swipe by percentages
+    @Step
     public void verticalSwipeByPercentages(double startPercentage, double endPercentage, double anchorPercentage) {
         Dimension size = driver.manage().window().getSize();
         int anchor = (int) (size.width * anchorPercentage);
@@ -181,6 +189,7 @@ public class InitialClass extends BaseClass {
     }
 
     //Scroll by coordinates
+    @Step
     public void scrollByCoord( int x1, int y1, int x2, int y2, int j) throws InterruptedException {
         TouchAction action = new TouchAction(driver);
 
@@ -193,7 +202,7 @@ public class InitialClass extends BaseClass {
                     .perform();
         }
     }
-
+    @Step
     public void isElementDisplayed(By element){
         try{
             driver.findElement(element).isDisplayed();
@@ -206,7 +215,7 @@ public class InitialClass extends BaseClass {
 
 
 
-
+    @Step
     public void scrollToMobileElement(String elementName, String direction) {
 
         final int maximumScrolls = 5;
@@ -223,17 +232,20 @@ public class InitialClass extends BaseClass {
             System.out.println("Scroll to element: " + elementName);
         }
     }
+
+    @Step
     private void scroll(String direction) {
         final HashMap<String, String> scrollObject = new HashMap<String, String>();
         scrollObject.put("direction", direction);
         driver.executeScript("mobile:scroll", scrollObject);
     }
-
+    @Step
     public List<MobileElement> findElementsByPredicateString(String predicateString) {
         return driver.findElements(MobileBy.iOSNsPredicateString(predicateString));
     }
 
     //Assert element
+    @Step
     public void assertElementByText(By element, String keys){
         MobileElement compare = (MobileElement) wait.until(ExpectedConditions.presenceOfElementLocated(element));
         if (compare.getText().equals(keys)){
